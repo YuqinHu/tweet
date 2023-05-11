@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <!--font-->
@@ -16,18 +11,25 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
-
     <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  </head>
 
   <body>
-
+    <!-- Top nav bar (fixed) -->
     <nav>
       <div>
-        <span>tweeter</span>
+        <span class = "title">tweeter</span>
+      </div>
+      <div class = "writeNewTweet">
+        <a><strong>Write</strong> a new Tweet!</a>
+        <i style="color:Tomato;" class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
-
     <!--header: name of logged in user-->
     <header>
       <div>
@@ -35,12 +37,9 @@
       </div>
       <br>
       <div>
-          <h2>Ian Hu</h2>
+          <h2>Your Name</h2>
       </div>
-  </header>
-
-
-
+    </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
